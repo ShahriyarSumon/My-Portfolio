@@ -1,0 +1,165 @@
+/* Header background */
+.header{
+    background-image: url();
+}
+.background{
+    background-color: #11111178;
+
+}
+
+/* Vertical faded text on left */
+.before {
+    position: fixed;
+    top: 37%;
+    left: -340px;
+    letter-spacing: 35px;
+    transform: translateY(-50%) rotate(-90deg);
+    font-size: 110px;
+    color: rgba(19, 45, 47, 0.345);
+    font-weight: bold;
+    pointer-events: none;
+    user-select: none;
+    z-index: 0;
+}
+
+/* Nav */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 100px;
+    z-index: 2;
+   
+    transition: box-shadow 0.3s ease; 
+}
+nav:hover{
+      box-shadow: 0 0 20px rgba(118, 221, 40, 0.812), 0 0 40px rgb(132, 229, 6);
+
+}
+
+/* Buttons */
+.btn, .btn2, .btn3 {
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    z-index:1;
+}
+
+.btn { background-color: #FD6E0A; color: white; }
+.btn:hover{
+    box-shadow: 0 0 20px rgba(235, 250, 93, 0.8), 0 0 40px rgba(226, 250, 89, 0.6);
+}
+
+
+.btn2 {
+    background-color: #FD6E0A; /* always orange */
+    color: white;              /* text white */
+    z-index: 1;
+    transition: box-shadow 0.3s ease; /* smooth glow transition */
+}
+
+.btn2:hover {
+    box-shadow: 0 0 20px rgba(235, 250, 93, 0.8), 0 0 40px rgba(226, 250, 89, 0.6);
+}
+
+
+.btn3{ background-color: rgb(126, 248, 248); color: rgb(12,3,3); }
+.btn3:hover{
+      box-shadow: 0 0 20px rgba(233, 247, 36, 0.812), 0 0 40px rgb(243, 205, 19);
+
+}
+.btn-div { display: flex; gap: 10px; }
+
+/* Nav list */
+nav ul {
+    display: flex;
+    align-items: center;
+}
+nav ul li {
+    margin-right: 51px;
+    list-style: none;
+}
+nav li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #474747;
+}
+
+/* Body */
+.body {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    background: #070708e0;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    width: 90%;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Highlight 'i' in name */
+#text {
+    color: #FD6E0A;
+}
+
+/* Nav title */
+.nav-title {
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 35px 0 230px;
+}
+.banner-content {
+    max-width: 580px;
+}
+.banner-greetings {
+    font-size: 45px;
+    font-weight: 600;
+}
+.banner-title {
+    font-size: 85px;
+    font-weight: bold;
+}
+.banner-discription {
+    font-size: 25px;
+}
+
+/* Portfolio image top-right */
+.image, #portfolio-image {
+    position: absolute;
+    top: 170px;      /* adjust vertical position */
+    right: 170px;    /* adjust horizontal position */
+    width: 510px;   /* adjust size */
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0,255,255,0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;     /* keep above canvas */
+}
+
+#portfolio-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 50px rgba(0,255,255,0.9);
+}
+
+/* Canvas */
+canvas {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}

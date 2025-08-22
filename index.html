@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mary Portfolio</title>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fff9f3;
+      overflow-x: hidden;
+    }
+
+    /* Nav Bar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 70px;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .logo span { color: #fe6c22; }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: black;
+      font-size: 16px;
+    }
+
+    .hire-btn {
+      background: #fe6c22;
+      padding: 12px 25px;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px 70px;
+    }
+
+    .left {
+      width: 50%;
+      padding: 40px 0;
+    }
+
+    .left h3 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .left h1 {
+      font-size: 60px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .left p {
+      margin-bottom: 30px;
+      max-width: 450px;
+      line-height: 1.5;
+      color: #444;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 15px;
+    }
+
+    .btn-primary {
+      background: #fe6c22;
+      color: #fff;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .btn-outlined {
+      background: transparent;
+      color: #fe6c22;
+      padding: 15px 25px;
+      border: 2px solid #fe6c22;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    /* Right Side Image */
+    .hero img {
+      width: 400px;
+      height: 500px;
+      object-fit: cover;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Background circles */
+    .circle-bg {
+      position: absolute;
+      right: 0;
+      top: 120px;
+      width: 700px;
+      height: 700px;
+      background: #fde8d2;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .circle-bg::after {
+      content: '';
+      position: absolute;
+      width: 450px;
+      height: 450px;
+      background: #fbd2a7;
+      border-radius: 50%;
+      top: 100px;
+      left: 100px;
+    }
+
+    /* Side vertical text */
+    .side-text {
+      position: absolute;
+      top: 200px;
+      left: -100px;
+      font-size: 60px;
+      transform: rotate(-90deg);
+      color: #d0c9c3;
+      letter-spacing: 2px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Vertical text -->
+  <div class="side-text">Developer</div>
+
+  <!-- Nav -->
+  <nav class="navbar">
+    <div class="logo">Mar<span>y</span></div>
+    <ul>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+    <button class="hire-btn">Hire Me</button>
+  </nav>
+
+  <!-- Background circle -->
+  <div class="circle-bg"></div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="left">
+      <h3>Hi, I am</h3>
+      <h1>Mary Hardy</h1>
+      <p>Shot what able cold new see hold. Friendly as an betrayed formerly he. Morning because as to society behaved moments.</p>
+
+      <div class="btn-group">
+        <button class="btn-primary">Download CV</button>
+        <button class="btn-outlined">Contact</button>
+      </div>
+    </div>
+
+    <div class="right">
+      <img src="https://i.ibb.co/jJQxCtM/person.png" alt="Hero Image">
+    </div>
+  </section>
+
+</body>
+</html>
